@@ -1,0 +1,19 @@
+//-Block for adding variables to
+block variables
+//- Standard layout of all pages which includes head, footer, and body
+
+doctype html
+html
+    head 
+        block head
+            include ../components/head
+    body
+        block nav
+            include ../components/nav
+
+        block main
+            main 
+                p This is the main part of the page
+
+        block footer
+            include ../components/footer

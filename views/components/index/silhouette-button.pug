@@ -1,0 +1,13 @@
+button.btn.btn-light(type='button' style='color:blue' data-bs-toggle='modal' data-bs-target='#picModal')
+    u SHOW SILHOUETTE
+#picModal.modal.fade(tabindex='-1')
+    .modal-dialog
+        .modal-content
+            .modal-header
+                button.btn-close(type='button' data-bs-dismiss='modal' aria-label='Close')
+            .modal-body
+                .bg-image(style=`background-image: url('https://cdn.nba.com/headshots/nba/latest/1040x760/${playerId}.png');\
+                background-repeat: no-repeat;\
+                background-position: center;\
+                background-size: contain;\
+                height: 15rem;`)

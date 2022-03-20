@@ -1,0 +1,56 @@
+nav.navbar.navbar-expand-sm.navbar-dark.bg-dark
+    .container-fluid
+        button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarNavDropdown')
+            span.navbar-toggler-icon
+        #navbarNavDropdown.collapse.navbar-collapse
+            ul.navbar-nav.mx-auto
+                li.nav-item.px-3
+                    button.btn.btn-dark(type='button' data-bs-toggle='modal' data-bs-target='#statsModal') STATS
+                    #statsModal.modal.fade(tabindex='-1')
+                        .modal-dialog
+                            .modal-content
+                                .modal-header
+                                    button.btn-close(type='button' data-bs-dismiss='modal')
+                                .modal-body
+                                    .container-fluid
+                                        .row.text-center
+                                            .col-3
+                                            .col-2
+                                                | GAMES
+                                                br
+                                                | PLAYED
+                                                br
+                                                | 0
+                                            .col-2
+                                            .col-2
+                                                | WIN
+                                                br
+                                                | PCT.
+                                                br
+                                                | 0%
+                                            .col-3
+                li.nav-item.px-3
+                    button.btn.btn-dark(type='button' data-bs-toggle='modal' data-bs-target='#directionsModal') HOW TO PLAY
+                    #directionsModal.modal.fade(tabindex='-1')
+                        .modal-dialog
+                            .modal-content
+                                .modal-header
+                                    h5.modal-title.w-100.text-center Guess the mystery player!
+                                    button.btn-close(type='button' data-bs-dismiss='modal')
+                                .modal-body
+                                    ul(style='line-height:225%;')
+                                        li You get eight guesses, try any current NBA player!
+                                        li
+                                            mark(style='background-color: green;') Green in any column
+                                            |  indicates a match!
+                                        li
+                                            mark(style='background-color: yellow;') Yellow in the team column
+                                            |  indicates the mystery player at one point played for this team, but does not currently
+                                        li
+                                            mark(style='background-color: yellow;') Yellow in the position column
+                                            |  indicates a partial match to the mystery player&apos;s position
+                                        li
+                                            mark(style='background-color: yellow;') Yellow in any other column
+                                            |  indicates this attribute is within 2 (inches, years, numbers) of the mystery player
+                                        li If you get stuck, try enabling silhouette mode!
+                                        li A new mystery player every day!

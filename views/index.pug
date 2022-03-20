@@ -1,0 +1,51 @@
+extends templates/layout
+
+block main
+    .container.pt-5.text-center
+        .row
+            h1 POELTL
+        .row.pt-3
+            h4 NBA PLAYER GUESSING GAME
+        .row.pt-3
+            .col-xlg-3
+            .col-xlg-6.col-sm-12.col-md-12
+                input.form-control.form-control-md(type='text' placeholder='Guess 1 of 8')
+            .col-xlg-3
+        .row.pt-3
+            .col
+                include ../views/components/index/silhouette-button
+        .row.pt-3
+            .table-responsive
+                table.table.align-middle
+                    thead
+                        tr
+                            th(scope='col')
+                            th(scope='col') TEAM
+                            th(scope='col') CONF
+                            th(scope='col') DIV
+                            th(scope='col') POS
+                            th(scope='col') HT
+                            th(scope='col') AGE
+                            th(scope='col') #
+                    tbody
+                        tr
+                            td Cameron Johnson
+                            td
+                                img(src=`https://cdn.nba.com/logos/nba/1610612756/primary/L/logo.svg` width='40rem' height='40rem')
+                                br
+                                | PHX
+                            td West
+                            td Pac.
+                            td F
+                            td
+                                span 6'8
+                                    br
+                                i.fa.fa-arrow-up
+                            td
+                                span 26
+                                    br
+                                i.fa.fa-arrow-down
+                            td
+                                span 23
+                                    br
+                                i.fa.fa-arrow-up
